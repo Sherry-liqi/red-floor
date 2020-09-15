@@ -25,11 +25,12 @@
 		height: 300px;
 	    padding-top: 100px;
 		margin-left: -200px;
-		font-size: 20px;
-		font-family: "幼圆";
+		font-size: 25px;
+		font-family: "华文行楷";
 		color: #E92326;
-			
-			
+		line-height: 8px;
+		transform:rotate(9deg);	
+		-webkit-transform:rotate(9deg);	
 			}
 		
 		.btn{
@@ -47,6 +48,9 @@
 		margin-top: -51px;
 	}
 	#ii{
+		position: relative;
+		top: 20px;
+		left: 10px;
 cursor: pointer;
 transition: all 0.6s;
 }
@@ -54,6 +58,9 @@ transition: all 0.6s;
 transform: scale(1.2);
 }
 		#iii{
+			position: relative;
+			top: 20px;
+			left:10px;
 cursor: pointer;
 transition: all 0.6s;
 }
@@ -68,7 +75,7 @@ transform: scale(1.2);
 	<div id="app" class="wrapper"></div>
 		<script type="text/javascript" src="./jquery.js"></script>
 		<script>
-			var data = ['今天要以林黛玉的身份和姐妹作诗','薛宝琴，邢岫烟,李纹联句做的诗最','少被罚每人写一首,众人觉得以红梅花为题','最好,最后、邢岫烟，李纹，薛宝琴，分','别用红，梅，花，做了一首七律'];
+			var data = ['今天要体验一下林黛','玉的日常，众姐妹约','在芦雪庵赏雪，赏红','梅作诗，薛宝琴，邢','岫烟,李纹联句做的','诗最少被罚以红梅花','为题最后,邢岫烟，','李纹薛，宝琴，分别','用红，梅，花，做了','一首七律'];
 			var wrapper = document.getElementsByClassName('wrapper')[0];
 			var delayCol = 0;
 			for(var i=0; i<data.length; i++){
@@ -80,7 +87,7 @@ transform: scale(1.2);
 					ospan.style.opacity = 0;					
 					op.appendChild(ospan);
 					ospan.style.transitionDelay = delayCol + 0.3 * j + 's';
-					ospan.style.transitionDuration = 10 + 'ms';
+					ospan.style.transitionDuration = 5+ 'ms';
 					(function(ospan){
 						setTimeout(function(){
 							ospan.style.opacity = 1;
