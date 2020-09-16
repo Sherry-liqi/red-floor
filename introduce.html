@@ -86,7 +86,7 @@ transform: scale(1.2);
 					ospan.innerText = str[j];
 					ospan.style.opacity = 0;					
 					op.appendChild(ospan);
-					ospan.style.transitionDelay = delayCol + 0.3 * j + 's';
+					ospan.style.transitionDelay = delayCol + 0.1 * j + 's';
 					ospan.style.transitionDuration = 5+ 'ms';
 					(function(ospan){
 						setTimeout(function(){
@@ -94,7 +94,7 @@ transform: scale(1.2);
 						},300)
 					})(ospan)
 				}
-				delayCol+=str.length* 0.4;
+				delayCol+=str.length* 0.2;
 				wrapper.appendChild(op);
 			}
 		
